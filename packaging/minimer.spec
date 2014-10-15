@@ -57,7 +57,7 @@ cat > %{buildroot}%{_bindir}/minimer <<EOF
 #!/bin/sh
 
 pushd %{_datadir}/minimer >/dev/null
-exec qmlscene main.qml
+exec qmlscene $* main.qml
 popd >/dev/null
 EOF
 

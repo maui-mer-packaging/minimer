@@ -1,0 +1,26 @@
+Name        : minimer
+Version     : 0.1.0
+Release     : 1
+Group       : System/Base
+License     : GPLv2+
+Summary     : Simple QML-only example to test basic graphics functionality of a device
+Description : |
+  Simple QML-only example to test basic graphics functionality of a device.
+URL         : https://github.com/mer-packages/minimer
+Sources     :
+    - "%{name}-%{version}.tar.xz"
+SetupOptions: -q -n %{name}-%{version}
+
+Requires:
+    - systemd
+    - qt5-qtdeclarative
+    - qt5-qtdeclarative-qmlscene
+    - qt5-qtdeclarative-tool-qml
+
+Configure: none
+Builder: none
+
+Files:
+    - "%{_bindir}/minimer"
+    - "%{_datadir}/minimer/*"
+    - "/lib/systemd/system/minimer.service"

@@ -10,7 +10,7 @@ Name:       minimer
 
 Summary:    Simple QML-only example to test basic graphics functionality of a device
 Version:    0.1.0
-Release:    1
+Release:    2
 Group:      System/Base
 License:    GPLv2+
 URL:        https://github.com/mer-packages/minimer
